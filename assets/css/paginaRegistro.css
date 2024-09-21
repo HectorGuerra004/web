@@ -1,0 +1,68 @@
+.registro {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Dos imágenes con el formulario en el centro */
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .left-image img, .right-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .form-container {
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form i {
+    position: relative;
+    right: 10px;
+  }
+  
+  button {
+    background-color: #00A651;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .left-image, .right-image{
+        display: none;
+    }
+
+    .registro{
+        display: block;
+    }
+  }
