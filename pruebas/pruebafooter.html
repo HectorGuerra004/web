@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .tipo-torneos {
+            text-align: center;
+            justify-content: space-between;
+            /* margin-top: 20vh; */
+        }
+    
+        .caja-section-1, .caja-section-2, .caja-section-3 {
+            position: relative; /* Habilita el posicionamiento relativo */
+            padding: 2vh;
+            margin-top: 30vh;
+        }
+    
+        .caja-section-1 img {
+            position: absolute; /* Posiciona la imagen sobre el div */
+            top: -20px; /* Ajusta la posición vertical */
+            left: 50%; /* Centra horizontalmente */
+            transform: translateX(-49%) translateY(-40%);            
+        }
+
+        .caja-section-2 img{
+            position: absolute; /* Posiciona la imagen sobre el div */
+            top: -20px; /* Ajusta la posición vertical */
+            left: 50%; /* Centra horizontalmente */
+            transform: translateX(-50%) translateY(-50%); 
+        }
+
+        .caja-section-3 img {
+            position: absolute; /* Posiciona la imagen sobre el div */
+            top: -20px; /* Ajusta la posición vertical */
+            left: 50%; /* Centra horizontalmente */
+            transform: translateX(-50%) translateY(-45%);    
+        }
+    
+        @media (min-width: 768px) {
+            .tipo-torneos {
+                margin-top: 30vh;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .caja-section-1, .caja-section-2, .caja-section-3 {
+            position: relative; /* Habilita el posicionamiento relativo */
+            padding: 2vh;
+            margin-top: 1vh;
+        }
+        }
+    </style>
+    
+    <section class="tipo-torneos">
+        <div class="caja-section-1">
+            <img src="../assets/img/bronce.png" alt="">
+            <div style="background-color: #94c745; width: 50vh;; height: 40vh; margin-top: 10vh;"></div>
+        </div>
+        <div class="caja-section-2">
+            <img src="../assets/img/oro.png" alt="">
+            <div style="background-color: #2d680f; width: 50vh; height: 50vh;"></div>
+        </div>
+        <div class="caja-section-3">
+            <img src="../assets/img/plata.png" alt="">
+            <div style="background-color: #94c745; width: 50vh; height: 45vh; margin-top: 5vh;"></div>
+        </div>
+    </section>
+    
+    
+</body>
+
+</html>

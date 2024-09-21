@@ -1,0 +1,15 @@
+.tipo-torneos {
+    border: 1px solid lightgray;
+    text-align: center;    
+}
+
+@media (min-width: 768px){
+    /* .padre{
+        display: flex;
+    } */
+
+    .tipo-torneos {
+        display: flex;
+        justify-content: space-between;
+    }
+}
